@@ -1,0 +1,70 @@
+---
+  title: "Coming Clean"
+  description: "A description of the Coming Clean class"
+  slug: "coming-clean"
+  course: "doa"
+  content: 
+    - 
+      title: "Introduction"
+      description: "Photographer Graham Macindoe and journalist Susan Stellin provide a case-study for us to consider how images are interpreted and to reflect on their enduring and potentially evolving impact. @[bio](Graham Macindoe|https://api.connectedacademy.io/rocket/media/Graham_cropped.jpg|Graham Macindoe is a New York based photographer and an adjunct professor at Parsons The New School. His work has been widely published in the UK and the US.|https://twitter.com/grahammacindoe)"
+      slug: "intro"
+      type: "content"
+      rich: true
+    - 
+      title: "Live Class"
+      description: "Join the live discussion and share your thoughts via Twitter. All images are copyright Graham Macindoe."
+      slug: "liveclass"
+      type: "liveclass"
+      duration: 1663.1
+      intros: 
+        - 
+          title: "Jonathan Worth's Introduction"
+          audio: "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-coming-clean-1530824783745-intro-64.mp3"
+        - 
+          audio: "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-coming-clean-1533153671915-intro-64.mp3"
+          title: "Introduction"
+      audio: 
+        - "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-coming-clean-main-64.mp3"
+        - "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-coming-clean-main-64.webm"
+    - 
+      title: "Further Reading"
+      description: "Here you’ll find links to articles relating to the work discussed and some of the themes discussed. Please tweet any of your suggestions for links @Jonathan_Worth"
+      slug: "reading"
+      type: "content"
+      rich: true
+      carousel: 
+        2: 
+          image: "media/rocket-coming-clean-1531315741527-media.jpg"
+          link: null
+          caption: null
+        3: 
+          image: "media/rocket-coming-clean-1531315748339-media.jpg"
+          link: null
+          caption: null
+        4: 
+          image: "media/rocket-coming-clean-1531315772399-media.jpg"
+          link: null
+          caption: null
+        5: 
+          image: "media/rocket-coming-clean-1531315778969-media.jpg"
+          link: null
+          caption: null
+        6: 
+          image: "media/rocket-coming-clean-1531315785494-media.jpg"
+          link: null
+          caption: null
+        7: 
+          image: "media/rocket-coming-clean-1531315787838-media.jpg"
+          link: null
+          caption: null
+        8: 
+          image: "media/rocket-coming-clean-1531315790039-media.jpg"
+          link: null
+          caption: null
+    - 
+      title: "Extended Content"
+      description: "Access Graham and Susan’s original full-length interviews and extra related content."
+      video: "Renqf1Ltg04"
+      slug: "extended"
+      type: "content"
+      rich: true

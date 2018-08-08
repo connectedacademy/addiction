@@ -1,0 +1,43 @@
+title: Miss Wish
+slug: miss-wish
+course: doa
+description: A description of the Miss Wish class
+content:
+  -
+    title: Introduction
+    description: >-
+      In this, the third of our series on Depictions Of Addiction, New York based photographer Nina Berman interviews her long term subject Kimberly Wish. Industry stalwart and critical thinker Stephen Mayes reflects on the audience perspective and Professor Mark Kleiman of New York University again challenges our thinking on addiction and forces us to revisit our earlier discussions.
+      @[bio](Nina Berman|CDN_URL/media/ninaberman.jpg|Nina is a documentary photographer, author and educator. Much of her photographic work focuses upon the American political and social landscape, including the militarization of American life and the dialogue around war, patriotism and sacrifice.|http://www.ninaberman.com)
+    slug: intro
+    type: content
+    rich: true
+  -
+    title: Live Class
+    description: Join the live discussion and share your thoughts via Twitter. Photographs are copyright Nina Berman, drawings are copyright Kimberly Stevens.
+    slug: liveclass
+    type: liveclass
+    duration: 1628
+    intros:
+      -
+        title: Jonathan Worth's Introduction
+        audio: https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-miss-wish-intro-64.mp3
+    audio:
+      - https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-miss-wish-main-64.mp3
+      - https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-miss-wish-main-64.webm
+  -
+    title: Further Reading
+    description: Read the following [An Auto Biography of Miss Wish](http://www.ninaberman.com/an-autobiography-of-miss-wish) and [Against Excess by Mark Kleiman](https://www.smashwords.com/books/view/142097)
+    slug: reading
+    type: content
+    rich: false
+  -
+    title: Extended Content
+    description: Access the original full-length interviews and extra related content.
+    slug: extended
+    type: content
+    rich: true
+  -
+    title: Homework
+    description: TBC
+    slug: homework
+    type: homework
