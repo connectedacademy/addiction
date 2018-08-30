@@ -20,10 +20,10 @@
         .box-wrapper
           .box.half
             h2 Connected Learning
-            p This course realises a new type of Connected Learning, giving students the opportunity to share knowledge and experience with peers, photographers and experts across the globe.
+            p This course realises a new type of connected learning, giving students the opportunity to share knowledge and experience with peers, photographers and experts across the globe.
           .box.half
             h2 Peer Feeback
-            p During the course there will be opportunities to create photographs with respect to the course material and receive feedback from peer students to help develop your work.
+            p During the course there will be opportunities to create photographs with respect to the course material and receive feedback from other students to help develop your work.
 
     .people-container
       .inner-container
@@ -55,7 +55,7 @@
             p An Autobiography of Miss Wish - Photographer: Nina Berman, Subject: Kimberly Wish, Audience: Stephen Mayes, Expert context: Dr Carl Hart
             h3 Available on the 16th October
 
-    .join-container
+    .footer
       .inner-container
         .box-wrapper
           .box
@@ -63,10 +63,8 @@
             p If you are interested in participating in the course follow our Twitter account and we will tweet to let you know as the content is made available.
             a.pure-button(href="https://twitter.com/ca_addiction" target="_blank")
               | Follow our Twitter
-          //- .box.info
-            p Course will be available {{ releaseTime }}
-    .footer
-      p This course was produced by #[a(href="https://twitter.com/Jonathan_Worth" target="_blank") Jonathan Worth] at  #[a(href="https://openlab.ncl.ac.uk" target="_blank") Open Lab].
+        p This course was produced by #[a(href="https://twitter.com/Jonathan_Worth" target="_blank") Jonathan Worth] at  #[a(href="https://openlab.ncl.ac.uk" target="_blank") Open Lab].
+
 </template>
 
 <script>
@@ -160,13 +158,15 @@ export default {
       font-weight normal
       margin 20px 0 0 0
     p
-      margin 0 0 30px 0
+      margin 0 0 10px 0
 
   .details-container
     vertical-gradient(black, lighten($color-primary, 15%))
     .inner-container
-      padding 0 20px 60px 20px
+      padding 0 10px 60px 10px
       max-width 840px
+      @media(max-width: 700px)
+        padding-bottom 10px
       .box-wrapper
         .box
           background-color alpha(white, 0.05)
@@ -212,9 +212,10 @@ export default {
 
   .people-container
     background-color white
-    padding 20px 0 60px 0
     .inner-container
-      padding 0 20px
+      padding 20px 10px 60px 10px
+      @media(max-width: 700px)
+        padding-bottom 10px
       .box-wrapper .box
         background-image()
         overflow hidden
@@ -247,17 +248,16 @@ export default {
           z-index 0
 
   .class-container
-    // vertical-gradient(lighten($color-primary, 15%), white)
-    // vertical-gradient(#f2f2f2, #f2f2f2)
+    // vertical-gradient(#e1e1e1, white)
     background-color #e1e1e1
-    padding 10px 20px 30px 20px
-    // .section-header
-    //    h2, p
-    //     color white
+    padding-bottom 60px
+    .inner-container
+      padding 10px
     .box-wrapper
       flex-wrap wrap
       justify-content flex-start
       .box
+        // box-shadow()
         flex-basis calc(50% - 20px)
         padding 20px 30px
         text-align left
@@ -276,17 +276,24 @@ export default {
         &:first-child
           flex-basis calc(100% - 20px)
 
-  .join-container
-    // vertical-gradient(#f2f2f2, white)
+  .footer
     background-color $color-primary
-    // margin-bottom -50px
-    padding-top 40px
+    padding 0 10px 40px 10px
     .inner-container
-      padding 0 20px
-      max-width 600px
+      p
+        color alpha(white, 0.4)
+      a
+        color alpha(white, 0.5)
       .box-wrapper
+        margin-bottom 40px
+        margin-top -80px
         .box
+          // box-shadow()
           padding 20px 30px
+          p
+            color $color-text-grey
+            margin 0 auto 15px auto
+            max-width 600px
           a.pure-button
             radius(10px)
             background-color $color-info
@@ -294,26 +301,4 @@ export default {
             display inline-block
             padding 10px 20px
             text-decoration none
-          &.info
-            background-color #f2f2f2
-            background-color $color-success
-            padding 10px
-            h2, p
-              reset()
-              color $color-text-dark-grey
-              color white
-              font-weight bold
-          &.date
-            h1, h2, h3
-              reset()
-            h3
-              color $color-text-grey
-
-  .footer
-    background-color $color-primary
-    padding 40px
-    p
-      color alpha(white, 0.4)
-    a
-      color alpha(white, 0.5)
 </style>
