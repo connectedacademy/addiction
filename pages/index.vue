@@ -14,9 +14,8 @@
         .box-wrapper
           .box.margin-bottom
             p
-              | I would like to invite you to take part in a #[strong free course] exploring how photographers depict addiction.
-              br
-              | Join a rich #[strong online discussion] with world-class photographers and #[strong receive peer feedback] on your own work.
+              | You are invited to take part in a #[strong free course] exploring how photographers depict addiction.
+              | Join a series of rich #[strong online discussions] with world-class photographers and #[strong receive peer feedback] on your own work.
             span - Jonathan Worth
         .box-wrapper
           .box.half
@@ -26,7 +25,7 @@
             h2 Peer Feeback
             p During the course there will be opportunities to create photographs with respect to the course material and receive feedback from peer students to help develop your work.
 
-    .class-container
+    .people-container
       .inner-container
         .section-header
           h2 Renowned Photographers
@@ -37,16 +36,35 @@
               h3(v-text="p.name")
               h4(v-text="p.description")
 
+    .class-container
+      .inner-container
+        .section-header
+          h2 Live Classes
+          p Engage in a live conversation at the start of each week in October.
+        .box-wrapper
+          .box.date.third
+            h2 1. Coming Clean
+            p Photographer: Graham Macindoe, Subject: Graham Macindoe, Audience: Susan Stellin, Expert context: Susan Stellin
+            h3 Available on 2nd October
+          .box.date.third
+            h2 2. Kensington Blues
+            p Photographer: Jeffrey Stockbridge, Subject: Krista, Audience: Gemma-Rose Turnbull, Expert context: Susan Stellin
+            h3 Available on the 9th October
+          .box.date.third
+            h2 3. Miss Wish
+            p An Autobiography of Miss Wish - Photographer: Nina Berman, Subject: Kimberly Wish, Audience: Stephen Mayes, Expert context: Dr Carl Hart
+            h3 Available on the 16th October
+
     .join-container
       .inner-container
         .box-wrapper
-          .box.blue
-            p The course will be released {{ releaseTime }}
           .box
             h2 Register your interest
             p If you are interested in participating in the course follow our Twitter account and we will tweet to let you know as the content is made available.
             a.pure-button(href="https://twitter.com/ca_addiction" target="_blank")
               | Follow our Twitter
+          //- .box.info
+            p Course will be available {{ releaseTime }}
     .footer
       p This course was produced by #[a(href="https://twitter.com/Jonathan_Worth" target="_blank") Jonathan Worth] at  #[a(href="https://openlab.ncl.ac.uk" target="_blank") Open Lab].
 </template>
@@ -88,7 +106,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../../../../app/src/assets/stylus/shared'
+@import '../../../app/src/assets/stylus/shared'
 
 #countdown-banner
   background-color $color-info
@@ -136,22 +154,37 @@ export default {
         width 100%
         height 100%
 
+  .section-header
+    padding 20px 0
+    h2
+      font-weight normal
+      margin 20px 0 0 0
+    p
+      margin 0 0 30px 0
+
   .details-container
-    vertical-gradient(alpha(black, 1), alpha($color-primary, 1))
+    vertical-gradient(black, lighten($color-primary, 15%))
     .inner-container
       padding 0 20px 60px 20px
       max-width 840px
-      .section-header
-        padding 20px 0
+      .box-wrapper
+        .box
+          background-color alpha(white, 0.05)
+          &.half
+            background-color alpha(white, 0.1)
+          h2, p, span
+            color white
 
   .inner-container
     padding-top 10px
     margin 0 auto
     max-width 840px
     text-align center
+
   .box-wrapper
     display flex
     flex-wrap wrap
+
   .box
     radius(10px)
     background-color white
@@ -177,14 +210,9 @@ export default {
       flex-wrap wrap
       flex-basis 100% !important
 
-  .class-container
+  .people-container
     background-color white
-    padding 20px 0
-    h2
-      font-weight normal
-      margin 20px 0 0 0
-    p
-      margin 0 0 30px 0
+    padding 20px 0 60px 0
     .inner-container
       padding 0 20px
       .box-wrapper .box
@@ -218,11 +246,41 @@ export default {
           height 120px
           z-index 0
 
+  .class-container
+    // vertical-gradient(lighten($color-primary, 15%), white)
+    // vertical-gradient(#f2f2f2, #f2f2f2)
+    background-color #e1e1e1
+    padding 10px 20px 30px 20px
+    // .section-header
+    //    h2, p
+    //     color white
+    .box-wrapper
+      flex-wrap wrap
+      justify-content flex-start
+      .box
+        flex-basis calc(50% - 20px)
+        padding 20px 30px
+        text-align left
+        h2
+          reset()
+          font-size 1.4em
+          font-weight normal
+        h3
+          reset()
+          color $color-text-grey
+          color $color-success
+          font-size 1em
+          font-weight bold
+        p
+          color $color-text-grey
+        &:first-child
+          flex-basis calc(100% - 20px)
+
   .join-container
-    vertical-gradient(white, #e1e1e1)
-    background-color white
-    margin-bottom -50px
-    padding 60px 0 0 0
+    // vertical-gradient(#f2f2f2, white)
+    background-color $color-primary
+    // margin-bottom -50px
+    padding-top 40px
     .inner-container
       padding 0 20px
       max-width 600px
@@ -236,19 +294,24 @@ export default {
             display inline-block
             padding 10px 20px
             text-decoration none
-          &.blue
-            background-color #e1e1e1
-            background-color $color-warning
+          &.info
+            background-color #f2f2f2
+            background-color $color-success
             padding 10px
             h2, p
               reset()
               color $color-text-dark-grey
               color white
               font-weight bold
+          &.date
+            h1, h2, h3
+              reset()
+            h3
+              color $color-text-grey
 
   .footer
     background-color $color-primary
-    padding 80px 40px 40px 40px
+    padding 40px
     p
       color alpha(white, 0.4)
     a
