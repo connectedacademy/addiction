@@ -49,11 +49,11 @@
           .box.date.third
             h2 2. Kensington Blues
             p Photographer: Jeffrey Stockbridge, Subject: Krista, Audience: Gemma-Rose Turnbull, Expert context: Susan Stellin
-            h3 Available on the 9th October
+            h3 Available on 9th October
           .box.date.third
             h2 3. Miss Wish
             p An Autobiography of Miss Wish - Photographer: Nina Berman, Subject: Kimberly Wish, Audience: Stephen Mayes, Expert context: Dr Carl Hart
-            h3 Available on the 16th October
+            h3 Available on 16th October
 
     .footer
       .inner-container
