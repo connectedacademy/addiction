@@ -1,11 +1,12 @@
 <template lang="pug">
   #release-overlay
+    //- #countdown 13 days until release
+
     .header-container
       .inner-container
         h1 Depictions of Addiction
         h3 Connected Academy
-
-        .video-wrapper
+        //- .video-wrapper
           .video-container
             iframe(src="https://youtube.com/embed/Gm6UWOO_SMU?modestbranding=1&autohide=1&showinfo=0&controls=0&rel=0&playsinline=1" frameborder='0' allowfullscreen)
 
@@ -20,40 +21,59 @@
         .box-wrapper
           .box.half
             h2 Connected Learning
-            p This course realises a new type of connected learning, giving students the opportunity to share knowledge and experience with peers, photographers and experts across the globe.
+            p An opportunity to engage in rich discussion with professional photographers and experts across the globe.
           .box.half
             h2 Peer Feeback
-            p During the course there will be opportunities to create photographs with respect to the course material and receive feedback from other students to help develop your work.
+            p Create photographs with respect to the course material and receive feedback from other students.
+    
+    .preview-container
+      .inner-container
+        iframe#soundcloud-embed(width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/454540926&color=%23ff5300&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true")
 
     .people-container
       .inner-container
         .section-header
           h2 Renowned Photographers
-          p Take the opportunity to engage in conversation with leading photographers.
+          p Take the opportunity to be a part of the conversation with leading photographers.
         .box-wrapper
           .box.third(v-for="p in people" :style="{ 'background-image': `url(${p.photo})` }")
             .text-wraper
               h3(v-text="p.name")
               h4(v-text="p.description")
 
+      #countdown Available {{ releaseTime }}
+    //- .platform-container
+      .inner-container
+        .section-header
+          h2 A New Form of Learning
+          p Learn through conversation and shared experiences.
+        .pure-button.pure-button-info View Course
+        //- .video-wrapper
+          .video-container
+            iframe(src="https://youtube.com/embed/btTHCF4znbo?modestbranding=1&autohide=1&showinfo=0&controls=0&rel=0&playsinline=1" frameborder='0' allowfullscreen)
+
+
     .class-container
       .inner-container
         .section-header
-          h2 Live Classes
-          p Engage in a live conversation at the start of each week in October.
+          h2 Participate in the Course
+          p Join us throughout October 2018 to participate in the classes either in Newcastle upon Tyne, UK or online right here.
         .box-wrapper
           .box.date.third
             h2 1. Coming Clean
             p Photographer: Graham Macindoe, Subject: Graham Macindoe, Audience: Susan Stellin, Expert context: Susan Stellin
-            h3 Available on 2nd October
+            h3 2nd October, 19:00
           .box.date.third
             h2 2. Kensington Blues
-            p Photographer: Jeffrey Stockbridge, Subject: Krista, Audience: Gemma-Rose Turnbull, Expert context: Susan Stellin
-            h3 Available on 9th October
+            p Photographer: Jeffrey Stockbridge, Subject: Krista, Audience: Gemma-Rose Turnbull, Expert context: Dr. Carl Hart
+            h3 9th October, 19:00
           .box.date.third
             h2 3. Miss Wish
-            p An Autobiography of Miss Wish - Photographer: Nina Berman, Subject: Kimberly Wish, Audience: Stephen Mayes, Expert context: Dr Carl Hart
-            h3 Available on 16th October
+            p Photographer: Nina Berman, Subject: Kimberly Wish, Audience: Stephen Mayes, Expert context: Mark Kleiman
+            h3 16th October, 19:00
+
+    .location-container
+      location-map
 
     .footer
       .inner-container
@@ -70,17 +90,21 @@
 <script>
 import { mapGetters } from 'vuex'
 import Moment from 'moment-mini'
+import LocationMap from './LocationMap'
 
 export default {
   name: 'release-overlay',
+  components: {
+    LocationMap
+  },
   computed: {
     releaseTime() {
-      return Moment(this.release, 'DD-MM-YY').fromNow()
+      return Moment(this.release, 'DD-MM-YY HH:mm').fromNow()
     }
   },
   data() {
     return {
-      release: '02-10-18',
+      release: '02-10-18 19:00',
       people: [
         {
           name: 'Graham Macindoe',
@@ -88,14 +112,14 @@ export default {
           photo: 'https://github.com/connectedacademy/addiction/raw/master/media/Graham_cropped.jpg'
         },
         {
-          name: 'Jeffery Stockbridge',
+          name: 'Jeffrey Stockbridge',
           description: 'Philadelphia based photographer featured in The New York Times Magazine.',
-          photo: 'https://www.honeygrow.com/sites/default/files/styles/2560wide/public/blog_headline/20160831-11_blogsize.jpg?itok=ySbXNyOx'
+          photo: 'https://github.com/connectedacademy/addiction/raw/master/media/jeffrey.jpg'
         },
         {
           name: 'Nina Berman',
           description: 'A documentary photographer, author and educator with a focus on the American political and social landscape.',
-          photo: 'https://www.worldpressphoto.org/sites/default/files/styles/carousal/public/photographers/Nina%20Berman%20self-portrait.jpg?itok=BFRsK6Kc'
+          photo: 'https://github.com/connectedacademy/addiction/raw/master/media/nina.jpg'
         }
       ]
     }
@@ -106,19 +130,40 @@ export default {
 <style lang="stylus">
 @import '../../../app/src/assets/stylus/shared'
 
-#countdown-banner
+$color-header = lighten($color-primary, 10%)
+
+#countdown
+  radius(10px)
   background-color $color-info
   color white
-  display none
-  padding 10px
+  display inline-block
+  font-size 1.1em
+  font-weight bold
+  line-height 40px
+  margin 0 auto
+  padding 0 25px
+  position relative
+  transform translateY(20px)
+  z-index 999
+
+.preview-container
+  background-color $color-primary
+  .inner-container
+    max-width 820px !important
+    padding 20px 20px
+
+#soundcloud-embed
+  radius(10px)
+  overflow hidden
+  // padding 10px
 
 #release-overlay
   background-color white
   text-align center
   .header-container
     reset()
-    background-color black
-    padding-bottom 10px
+    background-color $color-header
+    padding 20px 10px 40px 10px
     h1, h2, h3
       reset()
       color white
@@ -158,12 +203,18 @@ export default {
       font-weight normal
       margin 20px 0 0 0
     p
-      margin 0 0 10px 0
+      margin 0 auto 10px auto
+      max-width 600px
+
+  .platform-container
+    background-color $color-primary
+    .section-header
+      color white
 
   .details-container
-    vertical-gradient(black, lighten($color-primary, 15%))
+    vertical-gradient($color-header, $color-primary)
     .inner-container
-      padding 0 10px 60px 10px
+      padding 0 10px 20px 10px
       max-width 840px
       @media(max-width: 700px)
         padding-bottom 10px
@@ -174,6 +225,11 @@ export default {
             background-color alpha(white, 0.1)
           h2, p, span
             color white
+          &.primary
+            background-color $color-info
+            font-size .8em
+            font-weight bold
+            padding 10px
 
   .inner-container
     padding-top 10px
@@ -248,9 +304,9 @@ export default {
           z-index 0
 
   .class-container
-    // vertical-gradient(#e1e1e1, white)
     background-color #e1e1e1
-    padding-bottom 60px
+    padding-bottom 80px
+    position relative
     .inner-container
       padding 10px
     .box-wrapper
@@ -276,9 +332,18 @@ export default {
         &:first-child
           flex-basis calc(100% - 20px)
 
+  .location-container
+    background-color #e1e1e1
+    padding-bottom 0
+    position relative
+    .inner-container
+      padding 10px
+
   .footer
     background-color $color-primary
     padding 0 10px 40px 10px
+    position relative
+    z-index 99
     .inner-container
       p
         color alpha(white, 0.4)
@@ -286,12 +351,14 @@ export default {
         color alpha(white, 0.5)
       .box-wrapper
         margin-bottom 40px
-        margin-top -80px
         .box
           // box-shadow()
+          background-color transparent
           padding 20px 30px
+          h2
+            color white
           p
-            color $color-text-grey
+            color white
             margin 0 auto 15px auto
             max-width 600px
           a.pure-button

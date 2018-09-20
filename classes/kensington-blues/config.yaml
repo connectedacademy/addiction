@@ -6,7 +6,7 @@ content:
   -
     title: Introduction
     description: >-
-      In this, the second of three episodes, new participants revisit some of the themes of episode one and their alternate perspectives enable us to build on those discussions. We move from the self-portraiture of Graham Macindoe, to the participatory practices of Jeffery Stockbridge and his Kensington Blues project.
+      In this, the second of three episodes, new participants revisit some of the themes of episode one and their alternate perspectives enable us to build on those discussions. We move from the self-portraiture of Graham Macindoe, to the participatory practices of Jeffrey Stockbridge and his Kensington Blues project.
       @[bio](Jeffrey Stockbridge|default|Graduated from Drexel University with a BS in Photography in 2005. His photographs have been included in recent exhibitions at The National Portrait Gallery London, The Philadelphia Museum of Art, The Delaware Art Museum, The Delaware Center for Contemporary Arts, The Houston Center for Photography, The Wapping Project Bankside and The Print Center. Stockbridge lives and works in Philadelphia, Pennsylvania.|http://www.jeffreystockbridge.com/)
     slug: intro
     type: content
@@ -30,3 +30,8 @@ content:
     slug: reading
     type: content
     rich: true
+  -
+    title: Homework
+    description: TBC
+    slug: homework
+    type: homework

@@ -1,6 +1,6 @@
 ## Introduction
 
-Over the course of the previous two episodes we’ve moved from the self-portraiture of Graham Macindoe, to the participatory practice of Jeffery Stockbridge. We’ve been asked to consider the notion of the functional addict by Susan Stellin and have been challenged on both that, and our very concept of addiction itself by Dr Carl Hart.
+Over the course of the previous two episodes we’ve moved from the self-portraiture of Graham Macindoe, to the participatory practice of Jeffrey Stockbridge. We’ve been asked to consider the notion of the functional addict by Susan Stellin and have been challenged on both that, and our very concept of addiction itself by Dr Carl Hart.
  
 In this, the final of our triptych, we return to these themes and challenge them again. We also have the opportunity to dig deeper into the something that Gemma Rose Turnbull touched on in episode two when she reminded us of how the context of where we come across an image will affect our interpretation of it.
  
