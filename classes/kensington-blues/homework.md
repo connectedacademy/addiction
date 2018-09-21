@@ -1,8 +1,8 @@
-## The Photographer’s Assistant
+## The Participatory Portrait
 
-Work with a subject to realise their own self-portrait. Think of yourself as the technical assistant, bringing your photo-skills to bear on their behalf and, as a critical friend, discuss how the technical choices of framing and lighting will affect different viewer’s interpretations.
+Working with a subject create a collaborative image whereby the subject has a meaningful voice in how it is constructed. Ask them to contribute a caption or record a short interview which you bundle into the final piece.
 
-Need inspiration? [http://www.asocialpractice.com/anthony-luvera](http://www.asocialpractice.com/anthony-luvera)
+Need inspiration? [https://kensingtonblues.com/category/krista](https://kensingtonblues.com/category/krista)
 
 ## How it works
 Once you submit a link to your image below you will be entered into a private group discussion where you should receive feedback on your submission. Check back regularly to respond to feedback.

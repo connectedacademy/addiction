@@ -26,18 +26,18 @@ content:
       - https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-miss-wish-main-64.webm
   -
     title: Further Reading
-    description: Read the following [An Auto Biography of Miss Wish](http://www.ninaberman.com/an-autobiography-of-miss-wish) and [Against Excess by Mark Kleiman](https://www.smashwords.com/books/view/142097)
+    description: Read the following [Against Excess by Mark Kleiman](https://www.smashwords.com/books/view/142097) and [An Auto Biography of Miss Wish](http://www.ninaberman.com/an-autobiography-of-miss-wish) ![one](https://d3duklpulopo9e.cloudfront.net/fit-in/200x200/media/uploads/against_excess.jpeg) ![one](https://d3duklpulopo9e.cloudfront.net/fit-in/200x200/media/uploads/an-autobiography-of-miss-wish.jpg)
     slug: reading
     type: content
     rich: false
   -
     title: Extended Content
-    description: Access the original full-length interviews and extra related content.
+    description: Access the original full-length interviews from Nina, Kim and Stephen and dive deeper into their perspectives.
     slug: extended
     type: content
     rich: true
   -
     title: Homework
-    description: TBC
+    description: Work with a subject to realise their own self-portrait. Think of yourself as the technical assistant, bringing your photo-skills to bear on their behalf and, as a critical friend, discuss how the technical choices of framing and lighting will affect different viewer’s interpretations.
     slug: homework
     type: homework

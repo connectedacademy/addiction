@@ -6,7 +6,7 @@
   content: 
     - 
       title: "Introduction"
-      description: "Photographer Graham Macindoe and journalist Susan Stellin provide a case-study for us to consider how images are interpreted and to reflect on their enduring and potentially evolving impact. @[bio](Graham Macindoe|https://api.connectedacademy.io/rocket/media/Graham_cropped.jpg|Graham Macindoe is a New York based photographer and an adjunct professor at Parsons The New School. His work has been widely published in the UK and the US.|https://twitter.com/grahammacindoe)"
+      description: "Photographer Graham Macindoe and journalist Susan Stellin provide a case-study for us to consider how images are interpreted and to reflect on their enduring and potentially evolving impact. @[bio](Graham Macindoe|https://d3duklpulopo9e.cloudfront.net/fit-in/200x200/media/uploads/Graham_cropped.jpg|Graham Macindoe is a New York based photographer and an adjunct professor at Parsons The New School. His work has been widely published in the UK and the US.|https://twitter.com/grahammacindoe)"
       slug: "intro"
       type: "content"
       rich: true
@@ -22,7 +22,7 @@
           audio: "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-coming-clean-1530824783745-intro-64.mp3"
         - 
           audio: "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-coming-clean-1533153671915-intro-64.mp3"
-          title: "Introduction"
+          title: "Peter Anderson's Introduction"
       audio: 
         - "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-coming-clean-main-64.mp3"
         - "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-coming-clean-main-64.webm"
@@ -32,7 +32,7 @@
           date: 10-02-2018 19:00
     - 
       title: "Further Reading"
-      description: "Here you’ll find links to articles relating to the work discussed and some of the themes discussed. Please tweet any of your suggestions for links to twitter.com/jonathan_worth\n"
+      description: "Here you’ll find links to articles relating to the work discussed and some of the themes discussed. Please tweet any of your suggestions for links to twitter.com/jonathan_worth\n #DoA1Links"
       slug: "reading"
       type: "content"
       rich: true
@@ -74,6 +74,6 @@
       rich: true
     - 
       title: "Homework"
-      description: "TBC (take a self portrait)"
+      description: "Create an image or series of images that are in some way autobiographical. It doesn’t necessarily have to be a picture of your face, the contents of you pocket could say more about you than what you look like. Add a title and or caption to the image that adds another layer of meaning beyond the purely visual."
       slug: "homework"
       type: "homework"
