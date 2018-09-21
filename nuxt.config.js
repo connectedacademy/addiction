@@ -9,7 +9,8 @@ module.exports = {
     metaInfo: {
       link: [
         { rel: 'stylesheet', href: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' },
-        { rel: 'script', src: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js' }
+        { rel: 'script', src: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js' },
+        { rel: 'icon', type: 'image/x-icon', href: 'favicon.png' }
       ]
     }
   },
