@@ -112,13 +112,14 @@ export default {
       minZoom: 5,
       maxZoom: 18,
       dragPan: false,
-      scrollZoom: { around: 'center' },
+      scrollZoom: false, // { around: 'center' },
       padding: {
         bottom: 200
       }
     })
 
     window.map.on('load', () => {
+      map.addControl(new mapboxgl.NavigationControl())
       map.addLayer({
         'id': 'location',
         'type': 'circle',
