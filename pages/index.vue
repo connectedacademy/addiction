@@ -86,7 +86,9 @@
             h2 Register your interest
             p If you are interested in participating in the course follow our Twitter account and we will tweet to let you know as the content is made available.
             a.pure-button(href="https://twitter.com/ca_addiction" target="_blank")
-              | Follow our Twitter
+              | Follow Twitter
+            a.pure-button.pure-button-info(href="https://www.eventbrite.com/e/photography-course-depictions-of-addiction-tickets-50533151015?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" target="_blank")
+              | Reserve Ticket
         p This course was produced by #[a(href="https://twitter.com/Jonathan_Worth" target="_blank") Jonathan Worth] at  #[a(href="https://openlab.ncl.ac.uk" target="_blank") Open Lab].
 
 </template>
@@ -418,6 +420,10 @@ $color-header = lighten($color-primary, 10%)
             display inline-block
             padding 10px 20px
             text-decoration none
+            &.pure-button-info
+              background-color $color-warning
+            &:last-child
+              margin-left 10px
 
 .map-wrapper
   position relative
