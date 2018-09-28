@@ -24,6 +24,10 @@ content:
     audio:
       - https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-kensington-blues-main-64.mp3
       - https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-kensington-blues-main-64.webm
+    classes:
+      -
+        location: "Newcastle University"
+        date: 10-09-2018 19:00
   -
     title: Further Reading
     description: We have curated an extensive list of articles around the topic of Kensington Blues and encourage you to explore the conversations happening across the web. If you find something you think belongs on this list reach out to us.

@@ -24,6 +24,10 @@ content:
     audio:
       - https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-miss-wish-main-64.mp3
       - https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-miss-wish-main-64.webm
+    classes:
+      -
+        location: "Newcastle University"
+        date: 10-16-2018 19:00
   -
     title: Further Reading
     description: Read the following [Against Excess by Mark Kleiman](https://www.smashwords.com/books/view/142097) and [An Auto Biography of Miss Wish](http://www.ninaberman.com/an-autobiography-of-miss-wish) ![one](https://d3duklpulopo9e.cloudfront.net/fit-in/200x200/media/uploads/against_excess.jpeg) ![one](https://d3duklpulopo9e.cloudfront.net/fit-in/200x200/media/uploads/an-autobiography-of-miss-wish.jpg)
