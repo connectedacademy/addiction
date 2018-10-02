@@ -48,7 +48,7 @@
         .section-header
           h2 Join the Conversation
           p Learn through conversation and shared experiences.
-        a.pure-button(href="https://rocket.connectedacademy.io" target="_blank")
+        a.pure-button(href="https://rocket.connectedacademy.io" target="_blank") Join the Class
         //- .video-wrapper
           .video-container
             iframe(src="https://youtube.com/embed/btTHCF4znbo?modestbranding=1&autohide=1&showinfo=0&controls=0&rel=0&playsinline=1" frameborder='0' allowfullscreen)
