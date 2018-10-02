@@ -42,18 +42,19 @@
               h4(v-text="p.description")
 
       #countdown Available {{ releaseTime }}
-    //- .platform-container
+    
+    .platform-container
       .inner-container
         .section-header
-          h2 A New Form of Learning
+          h2 Join the Conversation
           p Learn through conversation and shared experiences.
-        .pure-button.pure-button-info View Course
+        a.pure-button(href="https://rocket.connectedacademy.io" target="_blank")
         //- .video-wrapper
           .video-container
             iframe(src="https://youtube.com/embed/btTHCF4znbo?modestbranding=1&autohide=1&showinfo=0&controls=0&rel=0&playsinline=1" frameborder='0' allowfullscreen)
 
 
-    .class-container
+    //- .class-container
       .inner-container
         .section-header
           h2 Participate in the Course
@@ -72,14 +73,14 @@
             p Photographer: Nina Berman, Subject: Kimberly Wish, Audience: Stephen Mayes, Expert context: Mark Kleiman
             h3 16th October, 19:00
 
-    .location-container
+    //- .location-container
       .map-wrapper
         a#map-header(href="https://goo.gl/maps/iQuk1gRFVk52" target="_blank")
           h4 Urban Sciences Building
           p 1 Science Square, Newcastle upon Tyne NE4 5TG
         #map.map
 
-    .footer
+    //- .footer
       .inner-container
         .box-wrapper
           .box
