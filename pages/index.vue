@@ -265,6 +265,19 @@ $color-header = lighten($color-primary, 10%)
     .section-header
       color white
 
+    a.pure-button
+      radius(10px)
+      background-color $color-info
+      color white
+      display inline-block
+      margin 40px auto
+      padding 10px 20px
+      text-decoration none
+      &.pure-button-info
+        background-color $color-warning
+      &:last-child
+        margin-left 10px
+
   .details-container
     vertical-gradient($color-header, $color-primary)
     .inner-container
