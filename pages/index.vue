@@ -53,7 +53,9 @@
             h2 1. Coming Clean
             p Photographer: Graham Macindoe, Subject: Graham Macindoe, Audience: Susan Stellin, Expert context: Susan Stellin
             h3 2nd October, 19:00
-            a.pure-button.pure-button-success(href="https://rocket.connectedacademy.io/class/coming-clean/" target="_blank")
+            //- a.pure-button.pure-button-info(href="https://www.eventbrite.com/e/photography-course-depictions-of-addiction-tickets-50533151015?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" target="_blank")
+            //-   | Reserve Ticket (Free)
+            a.pure-button.pure-button-success(href="https://addiction.connectedacademy.io/class/coming-clean/" target="_parent")
               | Join this Class (Free)
 
           .box.date.third
@@ -62,12 +64,16 @@
             h3 9th October, 19:00
             a.pure-button.pure-button-info(href="https://www.eventbrite.com/e/photography-course-depictions-of-addiction-tickets-50533151015?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" target="_blank")
               | Reserve Ticket (Free)
+            //- a.pure-button.pure-button-success(href="https://addiction.connectedacademy.io/class/kensington-blues/" target="_parent")
+              | Join this Class (Free)
           .box.date.third
             h2 3. Miss Wish
             p Photographer: Nina Berman, Subject: Kimberly Wish, Audience: Stephen Mayes, Expert context: Mark Kleiman
             h3 16th October, 19:00
             a.pure-button.pure-button-info(href="https://www.eventbrite.com/e/photography-course-depictions-of-addiction-tickets-50533151015?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" target="_blank")
               | Reserve Ticket (Free)
+            //- a.pure-button.pure-button-success(href="https://addiction.connectedacademy.io/class/miss-wish/" target="_parent")
+              | Join this Class (Free)
 
     .location-container
       .map-wrapper
@@ -468,4 +474,7 @@ a.pure-button
     .mapboxgl-canvas
       outline 0
       left 0
+
+::-webkit-scrollbar
+  display none !important
 </style>

@@ -1,3 +1,1 @@
 We invite you to take part in a free series exploring how photographers depict addiction. Join a rich online discussion with world-class photographers and receive peer feedback on your own work.
-
-\- Jonathan Worth
