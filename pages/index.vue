@@ -41,20 +41,9 @@
               h3(v-text="p.name")
               h4(v-text="p.description")
 
-      #countdown Available {{ releaseTime }}
-    
-    .platform-container
-      .inner-container
-        .section-header
-          h2 Join the Conversation
-          p Learn through conversation and shared experiences.
-        a.pure-button(href="https://rocket.connectedacademy.io" target="_blank") Join the Class
-        //- .video-wrapper
-          .video-container
-            iframe(src="https://youtube.com/embed/btTHCF4znbo?modestbranding=1&autohide=1&showinfo=0&controls=0&rel=0&playsinline=1" frameborder='0' allowfullscreen)
+      #countdown Released {{ releaseTime }}
 
-
-    //- .class-container
+    .class-container
       .inner-container
         .section-header
           h2 Participate in the Course
@@ -64,32 +53,39 @@
             h2 1. Coming Clean
             p Photographer: Graham Macindoe, Subject: Graham Macindoe, Audience: Susan Stellin, Expert context: Susan Stellin
             h3 2nd October, 19:00
+            a.pure-button.pure-button-success(href="https://rocket.connectedacademy.io/class/coming-clean/" target="_blank")
+              | Join this Class (Free)
+
           .box.date.third
             h2 2. Kensington Blues
             p Photographer: Jeffrey Stockbridge, Subject: Krista, Audience: Gemma-Rose Turnbull, Expert context: Dr. Carl Hart
             h3 9th October, 19:00
+            a.pure-button.pure-button-info(href="https://www.eventbrite.com/e/photography-course-depictions-of-addiction-tickets-50533151015?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" target="_blank")
+              | Reserve Ticket (Free)
           .box.date.third
             h2 3. Miss Wish
             p Photographer: Nina Berman, Subject: Kimberly Wish, Audience: Stephen Mayes, Expert context: Mark Kleiman
             h3 16th October, 19:00
+            a.pure-button.pure-button-info(href="https://www.eventbrite.com/e/photography-course-depictions-of-addiction-tickets-50533151015?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" target="_blank")
+              | Reserve Ticket (Free)
 
-    //- .location-container
+    .location-container
       .map-wrapper
         a#map-header(href="https://goo.gl/maps/iQuk1gRFVk52" target="_blank")
           h4 Urban Sciences Building
           p 1 Science Square, Newcastle upon Tyne NE4 5TG
         #map.map
 
-    //- .footer
+    .footer
       .inner-container
         .box-wrapper
           .box
-            h2 Register your interest
+            h2 Want to take part?
             p If you are interested in participating in the course follow our Twitter account and we will tweet to let you know as the content is made available.
             a.pure-button(href="https://twitter.com/ca_addiction" target="_blank")
               | Follow Twitter
             a.pure-button.pure-button-info(href="https://www.eventbrite.com/e/photography-course-depictions-of-addiction-tickets-50533151015?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" target="_blank")
-              | Reserve Ticket
+              | Reserve Tickets
         p This course was produced by #[a(href="https://twitter.com/Jonathan_Worth" target="_blank") Jonathan Worth] at  #[a(href="https://openlab.ncl.ac.uk" target="_blank") Open Lab].
 
 </template>
@@ -186,6 +182,24 @@ export default {
 
 $color-header = lighten($color-primary, 10%)
 
+a.pure-button
+  radius(10px)
+  background-color $color-info
+  color white
+  display inline-block
+  margin-top 10px
+  padding 10px 20px
+  text-decoration none
+  &.pure-button-info
+    background-color $color-warning
+  &:not(:last-child)
+    margin-right 10px
+  @media(max-width: 700px)
+    display block
+    margin 10px auto !important
+    text-align center
+    max-width 200px
+    
 #countdown
   radius(10px)
   background-color $color-info
@@ -264,19 +278,6 @@ $color-header = lighten($color-primary, 10%)
     background-color $color-primary
     .section-header
       color white
-
-    a.pure-button
-      radius(10px)
-      background-color $color-info
-      color white
-      display inline-block
-      margin 40px auto
-      padding 10px 20px
-      text-decoration none
-      &.pure-button-info
-        background-color $color-warning
-      &:last-child
-        margin-left 10px
 
   .details-container
     vertical-gradient($color-header, $color-primary)
@@ -428,17 +429,6 @@ $color-header = lighten($color-primary, 10%)
             color white
             margin 0 auto 15px auto
             max-width 600px
-          a.pure-button
-            radius(10px)
-            background-color $color-info
-            color white
-            display inline-block
-            padding 10px 20px
-            text-decoration none
-            &.pure-button-info
-              background-color $color-warning
-            &:last-child
-              margin-left 10px
 
 .map-wrapper
   position relative
