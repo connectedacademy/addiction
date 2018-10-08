@@ -30,9 +30,16 @@ content:
         date: 10-09-2018 19:00
   -
     title: Further Reading
-    description: We have curated an extensive list of articles around the topic of Kensington Blues and encourage you to explore the conversations happening across the web. If you find something you think belongs on this list reach out to us.
+    description: We have curated articles around the topic of Kensington Blues and encourage you to explore the conversations happening across the web. If you find something you think should be on there, please let us know.
     slug: reading
     type: content
+    rich: true
+  - 
+    title: "Surviving Kensington // behind the photos of 'Kensington Blues'"
+    description: "What used to be a proud blue-collar neighborhood in Philadelphia is now a deteriorating haven for drugs, crime, and prostitution. Kensington is famous for the place to get your fix; and for the place you end up stuck when you’ve let your vices get the best of you."
+    video: "xq2SwiBylow"
+    slug: "extended"
+    type: "content"
     rich: true
   -
     title: Homework
