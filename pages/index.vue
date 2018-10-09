@@ -56,16 +56,16 @@
             //- a.pure-button.pure-button-info(href="https://www.eventbrite.com/e/photography-course-depictions-of-addiction-tickets-50533151015?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" target="_blank")
             //-   | Reserve Ticket (Free)
             a.pure-button.pure-button-success(href="https://addiction.connectedacademy.io/class/coming-clean/" target="_parent")
-              | Join this Class (Free)
+              | View Class
 
           .box.date.third
             h2 2. Kensington Blues
             p Photographer: Jeffrey Stockbridge, Subject: Krista, Audience: Gemma-Rose Turnbull, Expert context: Dr. Carl Hart
-            h3 9th October, 19:00
-            a.pure-button.pure-button-info(href="https://www.eventbrite.com/e/photography-course-depictions-of-addiction-tickets-50533151015?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" target="_blank")
+            h3 LIVE FROM 19:15 TONIGHT
+            //- a.pure-button.pure-button-info(href="https://www.eventbrite.com/e/photography-course-depictions-of-addiction-tickets-50533151015?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" target="_blank")
               | Reserve Ticket (Free)
-            //- a.pure-button.pure-button-success(href="https://addiction.connectedacademy.io/class/kensington-blues/" target="_parent")
-              | Join this Class (Free)
+            a.pure-button.pure-button-success(href="https://addiction.connectedacademy.io/class/kensington-blues/" target="_parent")
+              | Join this Class (Live Now)
           .box.date.third
             h2 3. Miss Wish
             p Photographer: Nina Berman, Subject: Kimberly Wish, Audience: Stephen Mayes, Expert context: Mark Kleiman
