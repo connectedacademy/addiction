@@ -1,47 +1,46 @@
-title: Miss Wish
-slug: miss-wish
-course: rocket
-description: A description of the Miss Wish class
-content:
-  -
-    title: Introduction
-    description: >-
-      In this, the third of our series on Depictions Of Addiction, New York based photographer Nina Berman interviews her long term subject Kimberly Wish. Industry stalwart and critical thinker Stephen Mayes reflects on the audience perspective and Professor Mark Kleiman of New York University again challenges our thinking on addiction and forces us to revisit our earlier discussions.
-      @[bio](Nina Berman|CDN_URL/media/ninaberman.jpg|Nina is a documentary photographer, author and educator. Much of her photographic work focuses upon the American political and social landscape, including the militarization of American life and the dialogue around war, patriotism and sacrifice.|http://www.ninaberman.com)
-    slug: intro
-    type: content
-    rich: true
-  -
-    title: Live Class
-    description: Join the live discussion and share your thoughts via Twitter. Photographs are copyright Nina Berman, drawings are copyright Kimberly Stevens.
-    slug: liveclass
-    type: liveclass
-    duration: 1628
-    intros:
-      -
-        title: Jonathan Worth's Introduction
-        audio: https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-miss-wish-intro-64.mp3
-    audio:
-      - https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-miss-wish-main-64.mp3
-      - https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-miss-wish-main-64.webm
-    classes:
-      -
-        location: "Newcastle University"
-        date: 10-16-2018 19:00
-  -
-    title: Further Reading
-    description: Read the following [Against Excess by Mark Kleiman](https://www.smashwords.com/books/view/142097) and [An Auto Biography of Miss Wish](http://www.ninaberman.com/an-autobiography-of-miss-wish) ![one](https://d3duklpulopo9e.cloudfront.net/fit-in/200x200/media/uploads/against_excess.jpeg) ![one](https://d3duklpulopo9e.cloudfront.net/fit-in/200x200/media/uploads/an-autobiography-of-miss-wish.jpg)
-    slug: reading
-    type: content
-    rich: false
-  -
-    title: Extended Content
-    description: Access the original full-length interviews from Nina, Kim and Stephen and dive deeper into their perspectives.
-    slug: extended
-    type: content
-    rich: true
-  -
-    title: Homework
-    description: Work with a subject to realise their own self-portrait. Think of yourself as the technical assistant, bringing your photo-skills to bear on their behalf and, as a critical friend, discuss how the technical choices of framing and lighting will affect different viewer’s interpretations.
-    slug: homework
-    type: homework
+---
+  title: "Miss Wish"
+  slug: "miss-wish"
+  course: "rocket"
+  description: "A description of the Miss Wish class"
+  content: 
+    - 
+      title: "Introduction"
+      description: "In this, the third of our series on Depictions Of Addiction, New York based photographer Nina Berman interviews her long term subject Kimberly Stevens. Industry stalwart and critical thinker Stephen Mayes reflects on the audience perspective and Professor Mark Kleiman of New York University again challenges our thinking on addiction and forces us to revisit our earlier discussions. @[bio](Nina Berman|https://api.connectedacademy.io/addiction/media/ninaberman.jpg|Nina is a documentary photographer, author and educator. Much of her photographic work focuses upon the American political and social landscape, including the militarization of American life and the dialogue around war, patriotism and sacrifice.|http://www.ninaberman.com)"
+      slug: "intro"
+      type: "content"
+      rich: true
+    - 
+      title: "Live Class"
+      description: "Join the live discussion and share your thoughts via Twitter. Photographs are copyright Nina Berman, drawings are copyright Kimberly Stevens."
+      slug: "liveclass"
+      type: "liveclass"
+      duration: 1628
+      intros: 
+        - 
+          audio: "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/addiction-miss-wish-1539593169695-intro-64.mp3"
+          title: "Jonathan's 1 minute intro"
+      audio: 
+        - "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-miss-wish-main-64.mp3"
+        - "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-miss-wish-main-64.webm"
+      classes: 
+        - 
+          location: "Newcastle University"
+          date: "10-16-2018 19:30"
+    - 
+      title: "Further Reading"
+      description: "Read the following [Against Excess by Mark Kleiman](https://www.smashwords.com/books/view/142097) and [An Auto Biography of Miss Wish](http://www.ninaberman.com/an-autobiography-of-miss-wish) ![one](https://d3duklpulopo9e.cloudfront.net/fit-in/200x200/media/uploads/against_excess.jpeg) ![one](https://d3duklpulopo9e.cloudfront.net/fit-in/200x200/media/uploads/an-autobiography-of-miss-wish.jpg)"
+      slug: "reading"
+      type: "content"
+      rich: false
+    - 
+      title: "Extended Content"
+      description: "Access the original full-length interviews from Nina, Kim and Stephen and dive deeper into their perspectives."
+      slug: "extended"
+      type: "content"
+      rich: true
+    - 
+      title: "Homework"
+      description: "Work with a subject to realise their own self-portrait. Think of yourself as the technical assistant, bringing your photo-skills to bear on their behalf and, as a critical friend, discuss how the technical choices of framing and lighting will affect different viewer’s interpretations."
+      slug: "homework"
+      type: "homework"
