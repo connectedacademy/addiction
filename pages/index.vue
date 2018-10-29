@@ -1,6 +1,5 @@
 <template lang="pug">
   #release-overlay
-    //- #countdown 13 days until release
 
     .header-container
       .inner-container
@@ -41,7 +40,7 @@
               h3(v-text="p.name")
               h4(v-text="p.description")
 
-      #countdown Released {{ releaseTime }}
+      //- #countdown Released {{ releaseTime }}
 
     .class-container
       .inner-container
@@ -52,30 +51,32 @@
           .box.date.third
             h2 1. Coming Clean
             p Photographer: Graham Macindoe, Subject: Graham Macindoe, Audience: Susan Stellin, Expert context: Susan Stellin
-            h3 2nd October, 19:00
+            h3 Available Now
             //- a.pure-button.pure-button-info(href="https://www.eventbrite.com/e/photography-course-depictions-of-addiction-tickets-50533151015?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" target="_blank")
             //-   | Reserve Ticket (Free)
-            a.pure-button.pure-button-success(href="https://addiction.connectedacademy.io/class/coming-clean/" target="_parent")
+            a.pure-button.pure-button-info(href="https://addiction.connectedacademy.io/class/coming-clean/" target="_parent")
               | View Class
 
           .box.date.third
             h2 2. Kensington Blues
             p Photographer: Jeffrey Stockbridge, Subject: Krista, Audience: Gemma-Rose Turnbull, Expert context: Dr. Carl Hart
-            h3 9th October, 19:00
+            h3 Available Now
             //- a.pure-button.pure-button-info(href="https://www.eventbrite.com/e/photography-course-depictions-of-addiction-tickets-50533151015?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" target="_blank")
               | Reserve Ticket (Free)
-            a.pure-button.pure-button-success(href="https://addiction.connectedacademy.io/class/kensington-blues/" target="_parent")
+            a.pure-button.pure-button-info(href="https://addiction.connectedacademy.io/class/kensington-blues/" target="_parent")
               | View Class
           .box.date.third
             h2 3. Miss Wish
-            p Photographer: Nina Berman, Subject: Kimberly Wish, Audience: Stephen Mayes, Expert context: Mark Kleiman
-            h3 16th October, 19:00
-            a.pure-button.pure-button-info(href="https://www.eventbrite.com/e/photography-course-depictions-of-addiction-tickets-50533151015?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" target="_blank")
+            p Photographer: Nina Berman, Subject: Kimberly Stevens, Audience: Stephen Mayes, Expert context: Mark Kleiman
+            h3 {{ currentState === 'closed' ? '19:30 - 16th October 2018' : 'Available Now' }}
+            a.pure-button.pure-button-warning(v-if="currentState === 'closed'" href="https://www.eventbrite.com/e/photography-course-depictions-of-addiction-tickets-50533151015?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" target="_blank")
               | Reserve Ticket (Free)
-            //- a.pure-button.pure-button-success(href="https://addiction.connectedacademy.io/class/miss-wish/" target="_parent")
-              | Join this Class (Free)
+            a.pure-button.pure-button-success(v-if="currentState === 'live'" href="https://addiction.connectedacademy.io/class/miss-wish/" target="_parent")
+              | Join this Class (Live Now)
+            a.pure-button.pure-button-info(v-if="currentState === 'finished'" href="https://addiction.connectedacademy.io/class/miss-wish/" target="_parent")
+              | View Class
 
-    .location-container
+    .location-container(v-if="currentState === 'closed'")
       .map-wrapper
         a#map-header(href="https://goo.gl/maps/iQuk1gRFVk52" target="_blank")
           h4 Urban Sciences Building
@@ -85,7 +86,7 @@
     .footer
       .inner-container
         .box-wrapper
-          .box
+          .box(v-if="currentState === 'closed'")
             h2 Want to take part?
             p If you are interested in participating in the course follow our Twitter account and we will tweet to let you know as the content is made available.
             a.pure-button(href="https://twitter.com/ca_addiction" target="_blank")
@@ -152,15 +153,27 @@ export default {
           }
       })
     })
+
+    this.checkState()
+    setInterval(() => {
+      this.checkState()
+    }, 10 * 30)
   },
   computed: {
     releaseTime() {
-      return Moment(this.release, 'DD-MM-YY HH:mm').fromNow()
+      return Moment.utc(this.release, 'DD-MM-YY HH:mm').fromNow()
+    }
+  },
+  methods: {
+    checkState () {
+      this.currentState = Moment().isBefore(Moment.utc('2018-10-16 18:30:00', 'YYYY-MM-DD HH:mm:s', true)) ? 'closed' : 'live';
+      this.currentState = Moment().isAfter(Moment.utc('2018-10-16 20:30:00', 'YYYY-MM-DD HH:mm:s', true)) ? 'finished' : this.currentState;
     }
   },
   data() {
     return {
-      release: '02-10-18 19:00',
+      release: '02-10-18 19:30',
+      currentState: 'closed',
       people: [
         {
           name: 'Graham Macindoe',
@@ -196,7 +209,11 @@ a.pure-button
   margin-top 10px
   padding 10px 20px
   text-decoration none
+  &.pure-button-success
+    background-color $color-success
   &.pure-button-info
+    background-color $color-info
+  &.pure-button-warning
     background-color $color-warning
   &:not(:last-child)
     margin-right 10px
