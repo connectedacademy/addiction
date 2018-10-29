@@ -20,6 +20,9 @@
         - 
           audio: "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/addiction-kensington-blues-1539097872782-intro-64.mp3"
           title: "Jonathan Worth's 1 Minute Introduction"
+        - 
+          audio: "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/addiction-kensington-blues-1540209274133-intro-64.mp3"
+          title: "Dr Peter Anderson's 1 min intro"
       audio: 
         - "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-kensington-blues-main-64.mp3"
         - "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-kensington-blues-main-64.webm"

@@ -20,6 +20,9 @@
         - 
           audio: "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/addiction-miss-wish-1539593169695-intro-64.mp3"
           title: "Jonathan's 1 minute intro"
+        - 
+          audio: "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/addiction-miss-wish-1540209354113-intro-64.mp3"
+          title: "Dr Peter Anderson's 1 minute intro"
       audio: 
         - "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-miss-wish-main-64.mp3"
         - "https://s3-us-west-2.amazonaws.com/ca-us-west-2/encoded/rocket-miss-wish-main-64.webm"
